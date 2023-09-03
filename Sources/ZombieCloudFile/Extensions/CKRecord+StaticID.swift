@@ -6,7 +6,7 @@ internal extension CKRecord.ID {
         CKRecord.ID(recordName: "\(name)Entry")
     }
 
-    static func fragment(entry: Entry, number: Int) -> CKRecord.ID {
-        CKRecord.ID(recordName: "\(entry.id.recordName)Fragment\(number)")
+    static func fragment(entry: Entry, index: Int) -> CKRecord.ID {
+        CKRecord.ID(recordName: "\(entry.id.recordName)Fragment\(index)")
     }
 }

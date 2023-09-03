@@ -109,8 +109,9 @@ public class ZombieCloudFileManager {
     }
     
     internal func fragmentSlotIDs(for entry: Entry) -> [CKRecord.ID] {
-        (1...entry.fragments).map { number in
-            CKRecord.ID.fragment(entry: entry, number: number)
+        guard !entry.isEmpty else { return [] }
+        return (1...entry.fragments).map { number in
+            CKRecord.ID.fragment(entry: entry, index: number)
         }
     }
 }
