@@ -1,10 +1,3 @@
-//
-//  File.swift
-//  
-//
-//  Created by Oleksandr Rypyak on 07/08/2023.
-//
-
 import Foundation
 import XCTest
 @testable import ZombieCloudFile
